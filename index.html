@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OYUN KOLTUĞU</title>
+<style>
+:root{--bg:#101827;--panel:#1d2b40;--text:#f3f6fb;--muted:#b9c7d9;--accent:#54c6eb}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#0c1422,#182d46);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+header{padding:34px 18px;text-align:center;background:#0a1220;border-bottom:3px solid var(--accent)}
+header h1{margin:0;font-size:clamp(30px,5vw,48px);letter-spacing:3px}header p{color:var(--muted);margin:10px 0 0}
+nav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:14px;background:#142238;position:sticky;top:0;z-index:2}
+nav a{color:white;text-decoration:none;padding:10px 16px;border-radius:20px;background:#263d59}nav a:hover{background:#167da1}
+main{max-width:1150px;margin:auto;padding:26px 18px}
+.intro{text-align:center;padding:22px 12px 30px}.intro h2{font-size:28px}.intro p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.game-card{overflow:hidden;background:var(--panel);border:1px solid #344b66;border-radius:15px;box-shadow:0 8px 22px #0005}
+.game-card img{display:block;width:100%;height:185px;object-fit:cover;background:#263d59}
+.card-content{padding:18px}.card-content h2{margin:0 0 14px;color:var(--accent);font-size:22px}
+.card-content p{margin:9px 0;color:#e4edf7;line-height:1.4}.card-content b{color:#9edff2}
+footer{text-align:center;padding:24px;color:var(--muted);background:#0a1220;margin-top:30px}
+@media(max-width:480px){main{padding:18px 12px}.game-card img{height:160px}}
+</style>
+</head>
+<body>
+<header><h1>OYUN KOLTUĞU</h1><p>Oyunları keşfet, oyunlar hakkında bilgi edin!</p></header>
+<nav><a href="#ana-sayfa">Ana Sayfa</a><a href="#daha-acik">DAHA AÇIK</a><a href="#oyunlar">OYUNLAR</a></nav>
+<main>
+<section class="intro" id="ana-sayfa"><h2>OYUN BİLGİSİ</h2><p>Sevdiğin oyunların çıkış tarihi, konusu, ülkesi ve yapımcısı.</p></section>
+<section id="daha-acik" class="intro"><h2>DAHA AÇIK</h2><p>Oyun kartlarında her oyun hakkında temel bilgiler yer alır.</p></section>
+<section id="oyunlar"><div class="grid">
+
+    <article class="game-card" id="roblox">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQcYuy5JP64qeYDKw_Gh_tc-ZTEmpvQVQa1EGfQnrxOZCNnWhUKAl8_UpR1XM1GvNY-LeL2BUpsgU_-yGQhuf2aYrNTxHd6MmCRMAy-BJITIOi_-7rZs43hKJMJQ7iMf9jlzEdgzuSVXXsdvux-Cm2khEqrgoJRQioPkZxk-gpkbKuPlhj7MWlOpO-H7OPCs2xanV6sCXckDnMaMi9MpXyLqLrtpIVkxyIubCUWbu2Q=w1280" alt="ROBLOX" loading="lazy">
+      <div class="card-content">
+        <h2>ROBLOX</h2>
+        <p><b>OYUN:</b> ROBLOX</p>
+        <p><b>YER:</b> ABD</p>
+        <p><b>KONU:</b> ONLINE ARKADAŞLAR VE OYUN</p>
+        <p><b>ÇIKIŞ:</b> 1 EYLÜL 2006</p>
+        <p><b>YAŞ:</b> 10 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> ERİK CASSEL</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="among-us">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQecwtnEdAf6nT2yccdeiNWwJ_sJebSEfXgAZ5JCyAdwy7_hB6nBUUgVoKZFetwUGumsiKJsq0dtFPGIeEdhydET-KQpIpP9HmtUniW4MiLs6cjhV531b9JZ5-G1WKZFeZhNRF4Xx2u9LleQn7xDvmo7rL1jNe-tJhjTp0sOXwL_70GG5UPXusHa65ntrUIqTzSXbcZgAUzq1HI89JGYSwgx8eAuAgoF3Tte19r7FzI=w1280" alt="AMONG US" loading="lazy">
+      <div class="card-content">
+        <h2>AMONG US</h2>
+        <p><b>OYUN:</b> AMONG US</p>
+        <p><b>YER:</b> ABD</p>
+        <p><b>KONU:</b> KATİLLERİ BULMAK</p>
+        <p><b>ÇIKIŞ:</b> 15 HAZİRAN 2018</p>
+        <p><b>YAŞ:</b> 10 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> İNNERSHOT</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="battlefield-1">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQc6pt7TY4r1FnEnaqtzlkkpSgGx4qQkuBibhTfrWfDxMhQRVqZNwvwB6o2laEQJyy1P3W0bqlJQJTNBxFlVvoBBvXEDeHvv9QmnMATYqpuRQLHuw197qYxJ6Y7yF204iAI_YIuCGVh9jDMfQk4k-k_lT0hz4GgEuG0DvTc8sGGZ3fGruLlkMveuVhDuOeka_5MHOikGQJZXzjGuhryqLehqDojDu1IUAke0MeoBKYE=w1280" alt="BATTLEFIELD 1" loading="lazy">
+      <div class="card-content">
+        <h2>BATTLEFIELD 1</h2>
+        <p><b>OYUN:</b> BATTLEFIELD 1</p>
+        <p><b>YER:</b> İSVEÇ</p>
+        <p><b>KONU:</b> 1. DÜNYA SAVAŞI İTTİFAKLAR / İTİLAFLAR</p>
+        <p><b>ÇIKIŞ:</b> 21 EKİM 2016</p>
+        <p><b>YAŞ:</b> 12 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> DICE</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="minecraft">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQcREWkDbw7oLyrvTZrTf2FRRLw7QVqaxL-1Q7BDDrr1Tj8vve5NEgMbH2RUIg9ha9AD0uzqKRckO57DGr5mn2bLC2xnVc2KzaTkpy2Ej1LjeMRxWsA1INe2c26Ws0lLEe0dWY7g90Ko14W4mb5yGrB-7Z1-eFrbe6lkGXbVMZGaWQQJy2wqVDSieSHRRUnUGofLsSX_sNS7MrYkTU-KLk7rkCTqlQoqicqhe_FIo2A=w1280" alt="MINECRAFT" loading="lazy">
+      <div class="card-content">
+        <h2>MINECRAFT</h2>
+        <p><b>OYUN:</b> MINECRAFT</p>
+        <p><b>YER:</b> İSVEÇ</p>
+        <p><b>KONU:</b> HAYATTA KALMA / OYUNU BİTİRME</p>
+        <p><b>ÇIKIŞ:</b> 17 MAYIS 2009</p>
+        <p><b>YAŞ:</b> 10 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> MOJANG</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="pubg">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQcehO1lwdRCkInp8Rm0duHcvruNN9grrPgEVunUGjdenCsDG84gtoSklgL1cnqe--INB9ZdSlv3vNW_RNc-CdZU8GSseO1fqhwjXoB914wjIUkKClf63dTfC3yTQBlOItaDjspBqX9CseYAk8uBsfbYNQGIxEF1grv2RLu9wzVcuB2dK-0uYwJjyPyPXwPICOZ7BAcPwqKT5j63CnuhhUQx2Q_PTDULvEZt9hhawi8=w1280" alt="PUBG" loading="lazy">
+      <div class="card-content">
+        <h2>PUBG</h2>
+        <p><b>OYUN:</b> PUBG</p>
+        <p><b>YER:</b> GÜNEY KORE</p>
+        <p><b>KONU:</b> ÇEVRİM İÇİ SAVAŞ</p>
+        <p><b>ÇIKIŞ:</b> 23 MART 2017</p>
+        <p><b>YAŞ:</b> 12 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> KRAFTON</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="hill-climb-racing">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQdPBsx-QZrItzl0WyURVSwNlCVdhI6-fM2-KthZjXlbpZ-rFOD59-yH7BFA3MGAMn7QP6MQGIE5jgdkzuNLBu8FU5vfU07nVcLE8hBUnOaID2HHOmDfVSZd1OQpcjI1v1iuTTGF1yyP87K7XdsoG5GyKHlSjTk8GgoECJw3RL2NUI3Sfu1ZUsKUpOTOsSoqfuVYTne3t06EG5de5YKP75KQRwr_PbvregNPrCWcs78=w1280" alt="HILL CLIMB RACING" loading="lazy">
+      <div class="card-content">
+        <h2>HILL CLIMB RACING</h2>
+        <p><b>OYUN:</b> HILL CLIMB RACING</p>
+        <p><b>YER:</b> FİNLANDİYA</p>
+        <p><b>KONU:</b> İLERLEDİKÇE PUAN ALMA</p>
+        <p><b>ÇIKIŞ:</b> 22 EYLÜL 2012</p>
+        <p><b>YAŞ:</b> 7 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> FINGERSOFT</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="grand-theft-auto">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQdOYknfJZn1i_IU4NfjTKKri-KKxwiIubgPZurR3IRoMn_wIhKhs1x-dYqIwTUDebMqe_ebYwhuJWRiNoMYLRycXIXvXxv3_jq-9mbWGrWbjkQbUzNT_bTvuLks9T0lW7Cn4wigwVQULjvCWtsCv11FhJH5ZVfMUogmBZ4nOLz_vm8lEfvMWfZJkp1zdp7fKUGwYi-kH5lDAvPf5siWeluQJid70v4-kUpm7Crmt9o=w1280" alt="GRAND THEFT AUTO" loading="lazy">
+      <div class="card-content">
+        <h2>GRAND THEFT AUTO</h2>
+        <p><b>OYUN:</b> GRAND THEFT AUTO</p>
+        <p><b>YER:</b> ABD</p>
+        <p><b>KONU:</b> GÖREVLERİ YERİNE GETİRMEK</p>
+        <p><b>ÇIKIŞ:</b> 13 EYLÜL 2013</p>
+        <p><b>YAŞ:</b> 13 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> DAVID JONES</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="counter-strike">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQei45lSnt1_EUezAYkBniPQP91UrdjN_0Nedi18TUHA5vQEuJUoizmeYWjY43yldbvKpJbskYXlZ07e8jnApL6bUpTF9MACqyzrOeK5Rx1dIdoMCJSQ4z1ClYCPbu7ZThRrQxAx4y0bmukxql8vD-TsE7eLXltT4RFT3HsoWqoReSpKx0GOGsW4_fSTYoRa-z5MWIrNIx4EphfXTOgwcVMEQgfBl1YDiAoMkF5Ss4Y=w1280" alt="COUNTER-STRIKE" loading="lazy">
+      <div class="card-content">
+        <h2>COUNTER-STRIKE</h2>
+        <p><b>OYUN:</b> COUNTER-STRIKE</p>
+        <p><b>YER:</b> ABD</p>
+        <p><b>KONU:</b> TERÖRİST ÖLDÜRMEK / SAVAŞ</p>
+        <p><b>ÇIKIŞ:</b> 9 KASIM 2000</p>
+        <p><b>YAŞ:</b> 10 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> MINH LE</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="half-life">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQeHQcBjbrXfo3KTQLEb4s8SU40r_mQz8F_6-ZKaN3ZlZaRNd0YCXr5Wqf8s8Vowwk1um1IsvtTZ15jxICEFJl1lRk842JinhQG3-Y7wYScGCjHVYRXCXc_qXDOLghf8DKMbbeMkp2jrWxbt6SIv6pV8nQbAtZ4zGFiisk7oehPA_JSsNGUxDhMov5nh6E5wJEziuaLCF1uTOfr5h0nbB7aNfxmAyfrogykI0EoLj68=w1280" alt="HALF-LIFE" loading="lazy">
+      <div class="card-content">
+        <h2>HALF-LIFE</h2>
+        <p><b>OYUN:</b> HALF-LIFE</p>
+        <p><b>YER:</b> ABD</p>
+        <p><b>KONU:</b> DÜŞMANLARLA MÜCADELE / BİLİM KURGU</p>
+        <p><b>ÇIKIŞ:</b> 19 KASIM 1998</p>
+        <p><b>YAŞ:</b> 10 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> GABE NEWELL</p>
+      </div>
+    </article>
+
+    <article class="game-card" id="backrooms-1998">
+      <img src="https://sites.google.com/sitesv-images-rt/APXyLQeHQcBjbrXfo3KTQLEb4s8SU40r_mQz8F_6-ZKaN3ZlZaRNd0YCXr5Wqf8s8Vowwk1um1IsvtTZ15jxICEFJl1lRk842JinhQG3-Y7wYScGCjHVYRXCXc_qXDOLghf8DKMbbeMkp2jrWxbt6SIv6pV8nQbAtZ4zGFiisk7oehPA_JSsNGUxDhMov5nh6E5wJEziuaLCF1uTOfr5h0nbB7aNfxmAyfrogykI0EoLj68=w1280" alt="BACKROOMS: 1998" loading="lazy">
+      <div class="card-content">
+        <h2>BACKROOMS: 1998</h2>
+        <p><b>OYUN:</b> BACKROOMS: 1998</p>
+        <p><b>YER:</b> ABD</p>
+        <p><b>KONU:</b> KORKU / GERİLİM</p>
+        <p><b>ÇIKIŞ:</b> 15 HAZİRAN 2022</p>
+        <p><b>YAŞ:</b> 12 VE ÜZERİ</p>
+        <p><b>YAPIMCI:</b> STEELKRILL</p>
+      </div>
+    </article>
+</div></section>
+</main>
+<footer>OYUN KOLTUĞU · Kişisel oyun bilgi sitesi</footer>
+</body></html>
